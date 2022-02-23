@@ -21,7 +21,7 @@ UA=navigator.userAgent.substring(navigator.userAgent.indexOf("0.00 (")+28,naviga
 if(UA!="5.05" && UA!="5.07" && UA!="6.72" && UA!="layStation 4/9.00"){alert("Your PS4 Firmware Version Is Not Supported!\n\nOnly Firmware Versions 5.05, 6.72 & 9.00 are supported.");}
 var histlength=history.length;history.go(-histlength);
 var req = new XMLHttpRequest();
-req.open("GET", "http://127.0.0.1:9090/status", false);
+req.open("GET", "http://127.0.0.1:9090/status", true);
 req.send();
 req.onload = function(){if (window.applicationCache.status!='0'){sessionStorage.blSERVER="yes";myredirect();}}
 req.onerror = function(){if (window.applicationCache.status!='0'){myredirect();}}
