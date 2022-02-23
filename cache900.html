@@ -1,0 +1,20 @@
+<html manifest="cache900.cache"><!--  -->
+<head>
+<title>PS4 Offline Host! FW:9.00 V:1.0 By Ali Madhi</title>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Menu Files ... " + Percent + "%"};
+function DisplayCacheProgress(){
+setTimeout(function(){
+top.msgs.innerHTML="All Cache Files Installed Successfully";
+
+window.msgs.innerHTML="Now Turn Off The Internet & Reopen The Browser To Run The Webkit Exploit";
+},1000);
+}
+window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+</head>
+<body style="overflow:hidden;margin:0;">
+<h1 id=msgs style='font-size:30px;margin:5px 0 0 0;text-align:center;color:black;-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></h1>
+</body>
+</html>

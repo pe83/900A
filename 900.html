@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>history.replaceState(null,null,'index.html');</script>
+<title>PS4 Offline 9.00 Host! V:1.3 By Ali Madhi</title>
+<style>
+body{background-color:#2e8b57;background-size:cover;color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+.msgs{background-color:#2e8b57;height:40px;border:2px solid #2e8b57;font-size:28px;margin:0;padding:5px 0 5px 0;}
+.bottopmsg{display:block;position:absolute;bottom:0px;height:43px;width:1536px;font-size:26px;padding:5px 0 1px 0;}
+#backbutt:hover{cursor:pointer;background:#2e8b57;}
+</style>
+<script src="exploitV2.js"></script>
+</head>
+<body onload="goYesNo()">
+<div id=msgs class=msgs>PS4 Offline Host! FW:9.00 V:1.3 By Ali Madhi</div>
+<embed id=myembed1 name=page1 src="page2.html" frameborder="0" width="100%" height="647px" style="background-color:#2e8b57;display:none"></embed>
+<div id=backbutt onclick=hideTrainer(); tabindex=1 class="msgs bottopmsg" style="display:none;outline:none;cursor:pointer;">Back To Exploit Menu</div>
+<script>
+if(sessionStorage.loadWKPayload!=null){sessionStorage.blSERVER="no";}
+function defaultTXT(){msgs.innerHTML="PS4 Offline Host! FW:9.00 V:1.3 By Ali Madhi";}
+function trainerTXT(){msgs.innerHTML="PS4 Offline Host! FW:9.00 V:1.3 By Ali Madhi [Trainers Updated: "+localStorage.TrainerDate+"]";}
+
+function swapPage(PageID){
+ myembed1.style.display="block";var Clone=myembed1.cloneNode(true);Clone.setAttribute('src',PageID);
+ myembed1.parentNode.replaceChild(Clone,myembed1);
+}
+
+function showTrainer(){
+ localStorage.ps4trn="yes";swapPage('main.html');backbutt.style.display="block";trainerTXT();
+}
+
+function hideTrainer(){
+ sessionStorage.removeItem('lastPL');
+ localStorage.ps4trn="no";swapPage('page2.html');defaultTXT();
+ if(sessionStorage.webkitLoaded!="yes"&&sessionStorage.blSERVER!="yes"){
+  myembed1.style.display="none";
+  msgs.innerHTML="Loading Webkit, Please Wait ...";
+  setTimeout(function(){WebkitExploit();defaultTXT();},500);
+ }
+}
+
+function awaitpl(){
+ sessionStorage.removeItem('lastPL');msgs.innerHTML="BinLoader Ready! Send Payload To Port 9020";
+}
+
+function goYesNo(){
+ if (localStorage.ps4trn=="yes"){showTrainer();}
+ else if (sessionStorage.blSERVER=="yes"){swapPage('page2.html');}
+ else WebkitExploit();
+}
+</script>
+</body>
+</html>
