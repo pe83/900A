@@ -28,19 +28,21 @@ footer {position:center;bottom:10px;font-size:16px;font-weight:bold;z-index:1;co
 	50%{background-position:100% 50%}
 	100%{background-position:0% 50%}
 }
-			.red {
+			.flash {
 			animation: blinker 1s linear infinite;
-			font-size:20px;color:black;
+			font-size:20px;color:blue;
 			}
 			@keyframes blinker {
 			  50% {
 				opacity: 0;
 			  }
 			}
+			
+			
 </style>
 </head>
 <body>
-<div id=tip1>Current Payload Loading Method: Webkit</div>
+<div id=tip1 class=flash>Payload Loading By: Webkit</div>
 <hr>
 <button onclick="load_goldhen2()" onmouseover="top.msgs.innerHTML='GoldHEN v2.1.2'" onmouseout="top.defaultTXT()">
 <div class=butIMG2><img src="hen.png"></div><div class=butTXT>GoldHEN 2.1.2</div></button>
@@ -88,7 +90,7 @@ footer {position:center;bottom:10px;font-size:16px;font-weight:bold;z-index:1;co
 <hr>
 <footer><div ><h2 class="linear-wipe">الشرق لتجارة الوسائل الترفيهية - عالم الغد علي ماضي - 2020</h2></div></footer>
 <script>
-if (sessionStorage.blSERVER=="yes"){tip1.innerHTML="Current Payload Loading Method: GoldHEN BinLoader Server";}
+if (sessionStorage.blSERVER=="yes"){tip1.innerHTML="Payload Loading By: GoldHEN BinLoader Server";}
 
 function PIK(){
  if (sessionStorage.blSERVER=="yes"){GetPL();}
