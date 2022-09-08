@@ -1,6 +1,6 @@
 CACHE MANIFEST 
-# Ali Madhi 
 
+CACHE:
 900.html
 app2usb.png
 binloader.png
@@ -44,8 +44,7 @@ UpdatesDisable.png
 UpdatesEnable.png
 WebRTE.png
 
-NETWORK:
+NETWORK: 
 *
 
-SETTINGS:
-prefer-online:
+# Date: 2022-05-21T23:31:00Z:
