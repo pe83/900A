@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="utf-8">
 <title>PS4 Offline Host! V1.3 By Ali Madhi</title>
 <style>
 body{background-color:#2e8b57;background-size:cover;color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
