@@ -31,7 +31,6 @@ pl_DisableUpdates.bin
 pl_DumperGU.bin
 pl_EnableUpdates.bin
 pl_exitidu.bin
-pl_Goldhen24b14.bin
 pl_gtava1.bin
 pl_BeefQueefMod138.bin
 pl_LushModz40_138.bin
@@ -45,6 +44,21 @@ rdr2.png
 UpdatesDisable.png
 UpdatesEnable.png
 WebRTE.png
+900.bin
+alert.mjs
+chain.mjs
+config.mjs
+constants.mjs
+exploit.mjs
+int64.js
+int64.mjs
+kexploit.js
+mem.mjs
+memtools.mjs
+offset.mjs
+rop.js
+rw.mjs
+utils.mjs
 
 NETWORK:
 *
